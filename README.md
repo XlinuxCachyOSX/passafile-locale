@@ -75,6 +75,15 @@ Se la tua rete non è fidata, non avviare il server.
 - Python 3.8 o superiore (testato anche su 3.13)
 - Nessun pacchetto esterno
 
+## Test
+
+La suite `test_pasafile.py` verifica QR (matrici bit-identiche alla libreria `qrcode`, livello M, più decode con OpenCV) e tutto il server HTTP. Serve solo per i test:
+
+```bash
+pip install qrcode opencv-python-headless numpy
+python3 test_pasafile.py
+```
+
 ## Licenza
 
 MIT — vedi [LICENSE](LICENSE).
